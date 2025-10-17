@@ -26,12 +26,14 @@ const elements = {
 
 const DEFAULT_TABLE_IMAGE = 'assets/images/table-default.png';
 const PHOTO_UPLOAD_URL = 'https://example.com/wedding-photos';
+const MIN_SPLASH_DURATION = 2000;
 
 document.addEventListener('DOMContentLoaded', () => {
   boot();
 });
 
 async function boot() {
+  const splashStart = performance.now();
   elements.searchInput.disabled = true;
   elements.photoLink.href = PHOTO_UPLOAD_URL;
 
@@ -44,6 +46,11 @@ async function boot() {
     state.guests = guests;
     state.guestById = new Map(guests.map((guest) => [guest.id, guest]));
     state.tableIndex = buildTableIndex(guests);
+
+    const elapsed = performance.now() - splashStart;
+    if (elapsed < MIN_SPLASH_DURATION) {
+      await sleep(MIN_SPLASH_DURATION - elapsed);
+    }
 
     await hideSplash();
     activateSearch();
@@ -444,4 +451,8 @@ function renderTablemates(tablemates) {
       elements.tablemates.appendChild(document.createElement('br'));
     }
   });
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
