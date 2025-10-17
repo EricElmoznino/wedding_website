@@ -1,5 +1,111 @@
-<!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Hello</title></head>
-  <body><h1>It works 🎉</h1></body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bonnie &amp; Eric &mdash; Wedding Guest Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="splash" class="splash visible" aria-live="polite">
+      <div class="splash-card">
+        <p class="splash-eyebrow">Welcome to Bonnie &amp; Eric&rsquo;s wedding</p>
+        <h1 class="splash-title">We are getting your details&hellip;</h1>
+        <div class="loader" role="progressbar" aria-valuetext="Loading guest list">
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+        </div>
+        <p class="splash-hint">Hang tight &mdash; this will only take a moment.</p>
+        <p class="splash-error" id="splash-error" hidden></p>
+      </div>
+    </div>
+
+    <main>
+      <section id="search-screen" class="screen active" aria-labelledby="search-heading">
+        <header class="screen-header">
+          <p class="tagline">Bonnie &amp; Eric &mdash; July 12, 2025</p>
+          <h1 id="search-heading">Find your table</h1>
+          <p class="lead">
+            Enter your name to view your table details, meal selections, and helpful tips for the evening.
+          </p>
+        </header>
+
+        <div class="search-box">
+          <label for="search-input" class="search-label">Guest name</label>
+          <div class="search-input-wrapper">
+            <input
+              id="search-input"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              placeholder="Start typing your name..."
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="search-results"
+            />
+          </div>
+          <ul id="search-results" class="search-results" role="listbox" aria-label="Matching guests"></ul>
+          <p class="search-helper" id="search-helper">
+            Can&rsquo;t find yourself? Double-check your spelling or ask us to update the guest list.
+          </p>
+        </div>
+      </section>
+
+      <section id="info-screen" class="screen" aria-labelledby="info-heading" hidden>
+        <button type="button" class="back-button" id="back-button" aria-label="Back to search">
+          ← Search again
+        </button>
+
+        <header class="screen-header">
+          <p class="tagline">We are so glad you&rsquo;re here!</p>
+          <h1 id="info-heading"></h1>
+          <p class="lead" id="info-subheading"></p>
+        </header>
+
+        <article class="info-card">
+          <section class="info-section">
+            <h2>Table</h2>
+            <p class="info-emphasis" id="table-number"></p>
+            <p id="tablemates"></p>
+          </section>
+
+          <section class="info-section">
+            <h2>Menu selections</h2>
+            <p id="appetizer"></p>
+            <p id="main-course"></p>
+          </section>
+
+          <section class="info-section">
+            <h2>Find your spot</h2>
+            <div class="table-map">
+              <img
+                id="table-map-image"
+                src="assets/images/table-default.png"
+                alt="Venue layout with your table highlighted"
+              />
+            </div>
+          </section>
+
+          <section class="info-section">
+            <h2>Share the love</h2>
+            <p>
+              We&rsquo;d love to see the night through your eyes! Upload your favorite moments to our shared album.
+            </p>
+            <a id="photo-link" class="primary-link" href="https://example.com/wedding-photos" target="_blank" rel="noopener">
+              Upload your photos
+            </a>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
 </html>
