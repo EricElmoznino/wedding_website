@@ -26,7 +26,7 @@ const elements = {
 
 const DEFAULT_TABLE_IMAGE = 'assets/images/table-default.png';
 const PHOTO_UPLOAD_URL = 'https://flowcode.com/p/eSwHvtolUB';
-const MIN_SPLASH_DURATION = 2000;
+const MIN_SPLASH_DURATION = 3000;
 
 const APPETIZER_DESCRIPTIONS = {
   soup: 'Parsnip and pear velouté',

@@ -271,14 +271,16 @@ h2 {
 }
 
 .splash-card {
+  --splash-card-padding: clamp(1.5rem, 5vw, 3rem);
   max-width: 440px;
   text-align: center;
   background: rgba(227, 228, 224, 1.0);
-  padding: clamp(1.5rem, 5vw, 3rem);
+  padding: var(--splash-card-padding);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   display: grid;
   gap: 1rem;
+  overflow: hidden;
 }
 
 .splash-eyebrow {
@@ -290,9 +292,10 @@ h2 {
 }
 
 .splash-image {
-  width: 100%;
+  display: block;
+  width: calc(100% + (var(--splash-card-padding) * 2));
   aspect-ratio: 16 / 9;
-  border-radius: var(--border-radius);
+  margin: calc(-1 * var(--splash-card-padding)) calc(-1 * var(--splash-card-padding)) 0;
   background: url('../assets/images/splash-image.jpg') center/cover no-repeat;
 }
 
@@ -300,12 +303,6 @@ h2 {
   margin: -0.75rem 0 0 0;
   font-size: clamp(1.6rem, 5vw, 2.3rem);
   text-align: center;
-}
-
-.splash-subtitle {
-  margin: 0;
-  font-size: 1.05rem;
-  color: var(--text-secondary);
 }
 
 .loader {
@@ -341,12 +338,6 @@ h2 {
     transform: translateY(-6px);
     opacity: 1;
   }
-}
-
-.splash-hint {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
 }
 
 .splash-error {
