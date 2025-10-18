@@ -291,14 +291,6 @@ h2 {
   font-weight: 600;
 }
 
-.splash-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 16px;
-  background: url('../assets/images/background.jpg') center/cover no-repeat;
-  opacity: 0.8;
-}
-
 .splash-title {
   margin: -0.75rem 0 0 0;
   font-size: clamp(1.6rem, 5vw, 2.3rem);
