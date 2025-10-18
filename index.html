@@ -6,17 +6,16 @@
     <title>Bonnie &amp; Eric &mdash; Wedding Guest Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div id="splash" class="splash visible" aria-live="polite">
       <div class="splash-card">
-        <p class="splash-eyebrow">Welcome to Bonnie &amp; Eric&rsquo;s wedding</p>
-        <h1 class="splash-title">We are getting your details&hellip;</h1>
+        <div class="splash-image" aria-hidden="true"></div>
+        <p class="splash-eyebrow">Welcome to</p>
+        <h1 class="splash-title">Bonnie &amp; Eric&rsquo;s wedding</h1>
+        <p class="splash-subtitle">We are getting your details&hellip;</p>
         <div class="loader" role="progressbar" aria-valuetext="Loading guest list">
           <span class="loader-dot"></span>
           <span class="loader-dot"></span>
@@ -29,9 +28,9 @@
 
     <main>
       <section id="search-screen" class="screen active" aria-labelledby="search-heading">
-        <header class="screen-header">
-          <p class="tagline">Bonnie &amp; Eric &mdash; July 12, 2025</p>
-          <h1 id="search-heading">Find your table</h1>
+        <header class="screen-header screen-header--centered">
+          <h1 id="search-heading" class="event-title">Bonnie &amp; Eric&rsquo;s Wedding</h1>
+          <p class="event-date">December 13, 2025</p>
           <p class="lead">
             Enter your name to view your table details, meal selections, and helpful tips for the evening.
           </p>
@@ -53,7 +52,7 @@
           </div>
           <ul id="search-results" class="search-results" role="listbox" aria-label="Matching guests"></ul>
           <p class="search-helper" id="search-helper">
-            Can&rsquo;t find yourself? Double-check your spelling or ask us to update the guest list.
+            Can&rsquo;t find yourself? Check your spelling.
           </p>
         </div>
       </section>
@@ -71,7 +70,6 @@
 
         <article class="info-card">
           <section class="info-section">
-            <h2>Table</h2>
             <p class="info-emphasis" id="table-number"></p>
             <p id="tablemates"></p>
           </section>
@@ -96,10 +94,10 @@
           <section class="info-section">
             <h2>Share the love</h2>
             <p>
-              We&rsquo;d love to see the night through your eyes! Upload your favorite moments to our shared album.
+              We&rsquo;d love to see the night through your eyes! Upload your favorite moments to our shared album, live tonight, as you take them.
             </p>
-            <a id="photo-link" class="primary-link" href="https://example.com/wedding-photos" target="_blank" rel="noopener">
-              Upload your photos
+            <a id="photo-link" class="primary-link" href="https://flowcode.com/p/eSwHvtolUB" target="_blank" rel="noopener">
+              Upload your photos here
             </a>
           </section>
         </article>

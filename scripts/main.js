@@ -25,8 +25,20 @@ const elements = {
 };
 
 const DEFAULT_TABLE_IMAGE = 'assets/images/table-default.png';
-const PHOTO_UPLOAD_URL = 'https://example.com/wedding-photos';
+const PHOTO_UPLOAD_URL = 'https://flowcode.com/p/eSwHvtolUB';
 const MIN_SPLASH_DURATION = 2000;
+
+const APPETIZER_DESCRIPTIONS = {
+  soup: 'Parsnip and pear velouté',
+  salad: 'Yellow beet salad snow goat cheese with herbs, Chioggia beets, hazelnuts',
+  salmon: 'Gravlax salmon with orange citrus gel, herbed labneh, pistachios and green oil'
+};
+
+const MAIN_COURSE_DESCRIPTIONS = {
+  meat: 'Slow-cooked beef chuck, Yukon Gold mashed potatoes, forgotten root vegetables, and cooking jus',
+  fish: 'Slow-cooked salmon fillet, carrot purée, broccolini, tomato salsa and preserved lemon',
+  vegetarian: 'Roasted Eggplant Steak with Miso (vegan), Tahini, herbs, pomegranate and sesame'
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   boot();
@@ -164,8 +176,8 @@ function populateInfoScreen(guest) {
   const tablemates = (state.tableIndex.get(guest.table) || []).filter((mate) => mate.id !== guest.id);
   renderTablemates(tablemates);
 
-  elements.appetizer.textContent = `Your appetizer: ${guest.appetizer}.`;
-  elements.mainCourse.textContent = `Your main course: ${guest.mainCourse}.`;
+  elements.appetizer.textContent = `Your appetizer: ${guest.appetizerDescription}.`;
+  elements.mainCourse.textContent = `Your main course: ${guest.mainCourseDescription}.`;
 
   updateTableImage(guest.table);
 }
@@ -376,22 +388,18 @@ function cleanGuestRows(rows) {
     }
 
     const table = record['Table'] && record['Table'].trim() ? record['Table'].trim() : 'TBD';
-    const appetizer =
-      record['Meal -- Appetizer'] && record['Meal -- Appetizer'].trim()
-        ? record['Meal -- Appetizer'].trim()
-        : "Chef's choice (TBD)";
-    const mainCourse =
-      record['Meal -- Main course'] && record['Meal -- Main course'].trim()
-        ? record['Meal -- Main course'].trim()
-        : "Chef's choice (TBD)";
+    const appetizerCode = record['Meal -- Appetizer'] || '';
+    const mainCourseCode = record['Meal -- Main course'] || '';
 
     const guest = {
       id: slugify(`${name}-${table || 'tbd'}`),
       name,
       searchKey: normalizeForSearch(name),
       table,
-      appetizer,
-      mainCourse
+      appetizerCode,
+      mainCourseCode,
+      appetizerDescription: describeAppetizer(appetizerCode),
+      mainCourseDescription: describeMainCourse(mainCourseCode)
     };
 
     guests.push(guest);
@@ -451,6 +459,31 @@ function renderTablemates(tablemates) {
       elements.tablemates.appendChild(document.createElement('br'));
     }
   });
+}
+
+function describeAppetizer(value) {
+  return describeMeal(value, APPETIZER_DESCRIPTIONS);
+}
+
+function describeMainCourse(value) {
+  return describeMeal(value, MAIN_COURSE_DESCRIPTIONS);
+}
+
+function describeMeal(value, lookup) {
+  if (!value) {
+    return "Chef's choice";
+  }
+
+  const key = value.trim().toLowerCase();
+  if (!key) {
+    return "Chef's choice";
+  }
+
+  if (lookup[key]) {
+    return lookup[key];
+  }
+
+  return value;
 }
 
 function sleep(ms) {
