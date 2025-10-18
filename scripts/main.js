@@ -164,7 +164,7 @@ function setScreen(target) {
 }
 
 function populateInfoScreen(guest) {
-  elements.infoHeading.textContent = `Hi, ${guest.name}!`;
+  elements.infoHeading.textContent = `${guest.name}!`;
   elements.infoSubheading.textContent = "Here's everything you need for tonight.";
 
   if (guest.table && guest.table !== 'TBD') {
