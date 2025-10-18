@@ -273,6 +273,7 @@ h2 {
 .splash-card {
   max-width: 440px;
   text-align: center;
+  background: rgba(227, 228, 224, 1.0);
   padding: clamp(1.5rem, 5vw, 3rem);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -291,14 +292,14 @@ h2 {
 .splash-image {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 16px;
-  background: url('../assets/images/background.jpg') center/cover no-repeat;
-  opacity: 0.8;
+  border-radius: var(--border-radius);
+  background: url('../assets/images/splash-image.jpg') center/cover no-repeat;
 }
 
 .splash-title {
   margin: -0.75rem 0 0 0;
   font-size: clamp(1.6rem, 5vw, 2.3rem);
+  text-align: center;
 }
 
 .splash-subtitle {
