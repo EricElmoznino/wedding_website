@@ -50,7 +50,7 @@ async function boot() {
   elements.photoLink.href = PHOTO_UPLOAD_URL;
 
   try {
-    const guests = await fetchGuestData('assets/test_example_data.csv');
+    const guests = await fetchGuestData('assets/Eric Bonnie Wedding - Guests.csv');
     if (!guests.length) {
       throw new Error('No guests could be loaded from the data source.');
     }
