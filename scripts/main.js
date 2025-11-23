@@ -30,7 +30,7 @@ const MIN_SPLASH_DURATION = 2500;
 
 const APPETIZER_DESCRIPTIONS = {
   soup: 'Parsnip and pear velouté',
-  salad: 'Yellow beet salad snow goat cheese with herbs, Chioggia beets, hazelnuts',
+  salad: 'Yellow beet salad, snow goat cheese with herbs, Chioggia beets, hazelnuts',
   salmon: 'Gravlax salmon with orange citrus gel, herbed labneh, pistachios and green oil'
 };
 
