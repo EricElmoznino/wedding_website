@@ -24,9 +24,9 @@ const elements = {
   photoLink: document.getElementById('photo-link')
 };
 
-const DEFAULT_TABLE_IMAGE = 'assets/images/table-default.png';
+const DEFAULT_TABLE_IMAGE = 'assets/images/tables/table-1.png';
 const PHOTO_UPLOAD_URL = 'https://flowcode.com/p/eSwHvtolUB';
-const MIN_SPLASH_DURATION = 3000;
+const MIN_SPLASH_DURATION = 2500;
 
 const APPETIZER_DESCRIPTIONS = {
   soup: 'Parsnip and pear velouté',
@@ -449,9 +449,6 @@ function renderTablemates(tablemates) {
       'At this table are also seated guests to be confirmed -- you might be one of the first to arrive!';
     return;
   }
-
-  elements.tablemates.appendChild(document.createTextNode('At this table are also seated:'));
-  elements.tablemates.appendChild(document.createElement('br'));
 
   tablemates.forEach((mate, index) => {
     elements.tablemates.appendChild(document.createTextNode(mate.name));
