@@ -1,14 +1,14 @@
-,,,Totals:,20,171,133,78%,35,98.25%,3,136,,,
+,,,Totals:,20,171,130,76%,35,96.49%,7,137,,,
 ,,,,,,,,,,,,,,
 Name,Related to,Priority,Type,Wedding party,Invited,Attending,Meal -- Main course,Meal -- Appetizer,Allergies,Table,Email,Drinking level,Gift amount,Engagement party
 Bonnie Chao,Bonnie,High,Family,Yes,Yes,Yes,Fish,Salad,,8,chaobonnie@hotmail.com,Medium,$0,Attending
 Eric Elmoznino +1,Eric,High,Family,Yes,Yes,Yes,Meat,Salmon,,8,eric.elmoznino@gmail.com,High,$0,Attending
-Gad Elmoznino,Eric,High,Family,No,Yes,Yes,Fish,Salmon,,8,gad.elmoznino@me.com,Medium,,Attending
+Gad Elmoznino,Eric,High,Family,No,Yes,Yes,Fish,Salmon,,8,gad.elmoznino@me.com,Medium,"$50,000",Attending
 Roselyne Elmoznino +1,Eric,High,Family,No,Yes,Yes,Meat,Salmon,,8,,Low,,Attending
 Olivier Elmoznino,Eric,High,Family,Yes,Yes,Yes,Meat,Salmon,,8,olivier.elmoznino@gmail.com,High,,Attending
 Diana Brindina +1,Eric,High,Family,No,Yes,Yes,Fish,Salmon,,8,,Low,,Attending
-Rachel Elmoznino,Eric,High,Family,No,Yes,Yes,Fish,Salad,,8,rachelmo2001@yahoo.ca,Low,,Attending
-Hazdai Elmoznino +1,Eric,High,Family,No,Yes,Yes,Meat,Salmon,,8,,Low,,Attending
+Rachel Elmoznino,Eric,High,Family,No,Yes,No,Not attending,Not attending,,8,rachelmo2001@yahoo.ca,Low,,Attending
+Hazdai Elmoznino +1,Eric,High,Family,No,Yes,No,Not attending,Not attending,,8,,Low,,Attending
 Michael Elmoznino,Eric,High,Family,No,Yes,Yes,Meat,Salmon,,3,melmoznino@me.com,High,,Attending
 Marina Noschese +1,Eric,High,Plus one,No,Yes,Yes,Meat,Soup,,3,,Medium,,Attending
 Jonathan Elmoznino,Eric,High,Family,No,Yes,Yes,Meat,Soup,All nuts and seafood,1,elmozj99@gmail.com,Low,,Attending
@@ -58,9 +58,9 @@ Marla Schwartz,Eric,Medium,Parent's friends,No,Yes,Yes,Meat,Salmon,,6,marla.rutt
 Stuart Schwartz +1,Eric,Medium,Parent's friends,No,Yes,Yes,Meat,Salmon,,6,,Low,,
 Patricia Krasner,Eric,Medium,Parent's friends,No,Yes,Yes,Fish,Salad,Shellfish (shrimp crab lobster oyster octopus etc),6,trisheeb100@hotmail.com,Low,,
 Nadav Krasner +1,Eric,Medium,Parent's friends,No,Yes,Yes,Meat,Salad,,6,,Medium,,
-Cheryl Miller,Eric,Medium,Parent's friends,No,Yes,No,Not attending,Not attending,,,cherylmillerexec@gmail.com,Low,,
+Cheryl Miller,Eric,Medium,Parent's friends,No,Yes,Yes,Meat,Salmon,,6,cherylmillerexec@gmail.com,Low,,
 Corinne Ohayon,Eric,Medium,Parent's friends,No,Yes,Yes,Fish,Soup,,6,corrine.o@icloud.com,Medium,,
-Alissa Rappaport,Eric,Medium,Parent's friends,No,Yes,Yes,Meat,Salmon,,6,alissarappaport@gmail.com,Medium,,
+Alissa Rappaport,Eric,Medium,Parent's friends,No,Yes,No,Not attending,Not attending,,,alissarappaport@gmail.com,Medium,,
 Ali Rutman,Eric,Medium,Extended family / Family friend,No,Yes,Yes,Fish,Salad,,13,alissa.rutman@mail.mcgill.ca,Medium,,
 Noah Weinstein,Eric,High,Extended family / Family friend,No,Yes,Yes,Meat,Salmon,,13,nweinstein@blg.com,High,,
 Samantha Maldoff +1,Eric,High,Plus one,No,Yes,Yes,Meat,Salmon,,13,,Medium,,
@@ -91,7 +91,7 @@ Mary Stuart +1,Eric,Low,Grad,No,Yes,Yes,Vegetarian,Soup,,4,,,,
 David Dobre,Eric,Low,Grad,No,Yes,Yes,Fish,Salad,,5,david-a.dobre@mila.quebec,Medium,,
 Xiusi Li +1,Eric,Low,Grad,No,Yes,Yes,Meat,Salmon,,5,,Medium,,
 Charlie Gauthier,Eric,Low,Grad,No,Yes,Yes,Fish,Salad,,5,,Medium,,
-Anaïs Gosselin,Eric,Low,Grad,No,Yes,Yes,Fish,Salad,,5,,Medium,,
+Anaïs Gosselin +1,Eric,Low,Grad,No,Yes,No,Not attending,Not attending,,,,Medium,,
 Marawan Gamal,Eric,Low,Grad,No,Yes,Yes,Meat,Salmon,,11,marawan.gamal@mila.quebec,High,,
 Tami Hammond-Collins +1,Eric,Low,Grad,No,Yes,Yes,Vegetarian,Soup,,11,,,,
 Arna Ghosh,Eric,Medium,Grad,No,Yes,No,Not attending,Not attending,,,arnatubaikgp@gmail.com,Medium,,
@@ -109,7 +109,7 @@ Eva Tzu,Bonnie,High,Family,No,Yes,Yes,Fish,Salad,,8,tzueva63@gmail.com,None,,Att
 Allen Chao +1,Bonnie,High,Family,No,Yes,Yes,Fish,Salad,,8,,Medium,,
 Naomi Chao,Bonnie,High,Family,Yes,Yes,Yes,Meat,Soup,,12,naomichao1019@gmail.com,Medium,,
 April Tzu,Bonnie,High,Family,No,No,Not invited,Not attending,Not attending,,,,Low,,
-Cindy Chao,Bonnie,Low,Family,No,Yes,No,Meat,Soup,,12,jc90502@hotmail.com,Medium,,
+Cindy Chao,Bonnie,Low,Family,No,Yes,Yes,Meat,Soup,,12,jc90502@hotmail.com,Medium,,
 Archie Wang +1,Bonnie,Low,Family,No,Yes,No,Not attending,Not attending,,,,Medium,,
 Sam Chao,Bonnie,Low,Family,No,Yes,No,Not attending,Not attending,,,samchao55555@gmail.com,High,,
 Jason Chao,Bonnie,Low,Family,No,Yes,Yes,Meat,Salmon,,12,jason840610@gmail.com,,,
@@ -156,7 +156,7 @@ Ariel Seebarran,Bonnie,Medium,Undergrad,No,No,Not invited,Not attending,Not atte
 Ariel TODO +1,Bonnie,Medium,Undergrad,No,No,Not invited,Not attending,Not attending,,,,Medium,,
 Tim Liao,Bonnie,Medium,Work,No,Yes,Yes,Meat,Salmon,,7,tmliao2@gmail.com,High,,Attending
 Crystal Sequeira +1,Bonnie,Medium,Plus one,No,Yes,Yes,Fish,Salmon,,7,,Medium,,Attending
-Benjamin Toal,Bonnie,Low,Work,No,Yes,Yes,Vegetarian,Soup,,7,benjmtoal@gmail.com,High,,
+Benjamin Toal,Bonnie,Low,Work,No,Yes,No,Not attending,Not attending,,,benjmtoal@gmail.com,,,
 Kiran Edwardson,Bonnie,Low,Work,No,,Not invited,Not attending,Not attending,,,,,,
 Sabrine +1,Bonnie,Low,Work,No,,Not invited,Not attending,Not attending,,,,,,
 Teresa Miletti,Bonnie,Low,Work,No,Yes,Yes,Fish,Salmon,,7,teremiletti@hotmail.com,,,
